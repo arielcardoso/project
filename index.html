@@ -17,6 +17,10 @@
         footer {
             text-align: center;
         }
+        input {
+            margin-bottom: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +92,10 @@
             <p>Ask a birth year and calculate how many days you lived till today. Show the days you lived in a DOM element. (Please ignore the leap year)</p>
             <hr/>
             <!-- The form goes here -->
+            <input class="form-control" id="birthdate" type="date"  />
+            <button class="btn btn-primary" onclick="CalculateDate()" >Calculate</button>
+            <!-- The result goes here -->
+            <p class="" id="section7-result"></p>
         </div>
     </div>
 
@@ -95,5 +103,7 @@
         <hr/>
         <small>Introduction to Computing May 11, 2020</small>
     </footer>
+
+    <script src="section7.js"></script>
 </body>
 </html>
