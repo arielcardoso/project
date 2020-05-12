@@ -34,25 +34,63 @@ function sum(){
 
 function check(){
     let chkNum = document.getElementById("5th_num").value;
-    let isPrimeNum = true;
+    let result;
+    
+    // if(chkNum<2){
+    //     result = "This number is NOT prime number";
+    // }
+    
 
-    for(let i = 2; i < chkNum; i++){
-        if(chkNum % i == 0){
-            isPrimeNum = false;
-        }
-    }   
-        if(chkNum < 2) {
-            isPrimeNum = false;
-        }
+    // for(let i = 2; i <= chkNum; i++){
 
-        if(isPrimeNum == true ){
-            document.getElementById("output2").innerHTML = "This number is prime number";
+    //     j=0;
+            
+    //     for(k=1; k<=i; k++){
+         
+    //         if(i % k == 0 ){
+    //             j++;
 
-        }else{
-            document.getElementById("output2").innerHTML = "This number is NOT prime number";
-           
-        }
-        
+    //         }
+    //     }
+    //     if(j==2){ 
+    //         result = "This number is prime number";
+    //     }else{ 
+    //         result = "This number is NOT prime number";
+    //     }
+
+    // }   
 
     
-}
+
+    if(chkNum == 2 || chkNum == 3){
+        result = "This number is prime number";
+    }
+
+    if(chkNum == 1){
+        result = "This number is NOT prime number";
+
+    }
+
+    // prime number is always odd number except 2
+    if(chkNum > 2 && chkNum % 2 == 0){ 
+        result = "This number is NOT prime number";
+
+    }else{
+        for(let i = 3; i < chkNum; i+=2){
+           
+            if(chkNum % i == 0){ 
+                result = "This number is NOT prime number";
+                break;
+            }else{
+                result = "This number is prime number";
+
+            }
+           
+        }
+
+    }
+
+   document.getElementById("output2").innerHTML = result;
+
+   
+}``
