@@ -1,3 +1,6 @@
+// 7rd Section
+// Ask a birth year and calculate how many days you lived till today. Show the days you lived in a DOM element. (Please ignore the leap year)
+
 // it is need to convert js time to days
 const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
 

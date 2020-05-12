@@ -79,10 +79,15 @@
 
     <div class="card">
         <div class="card-body">
-            <h4>6th Section</h4>
-            <p>Ask a number ‘n’ to show all the Fibonacci numbers up to n th Fibonacci number. For example, if the number is 7, it will show 1, 1, 2, 3, 5, 8, 13</p>
+            <h4>6rd Section</h4>
+            <p>Ask a number ‘n’ to show all the Fibonacci numbers up to 7 th Fibonacci number. For example, if the number is 7, it will show 1, 1, 2, 3, 5, 8, 13</p>
             <hr/>
             <!-- The form goes here -->
+            <script src="section6.js"></script>
+            <input class="form-control" id="fibonacci" type="number"  />
+            <button class="btn btn-primary" onclick="CalculateFibonaccie()" >Calculate</button>
+            <!-- The result goes here -->
+            <p class="font-weight-bold" id="section6-result"></p>
         </div>
     </div>
 
@@ -92,10 +97,11 @@
             <p>Ask a birth year and calculate how many days you lived till today. Show the days you lived in a DOM element. (Please ignore the leap year)</p>
             <hr/>
             <!-- The form goes here -->
+            <script src="section7.js"></script>
             <input class="form-control" id="birthdate" type="date"  />
             <button class="btn btn-primary" onclick="CalculateDate()" >Calculate</button>
             <!-- The result goes here -->
-            <p class="" id="section7-result"></p>
+            <p class="font-weight-bold" id="section7-result"></p>
         </div>
     </div>
 
@@ -103,7 +109,5 @@
         <hr/>
         <small>Introduction to Computing May 11, 2020</small>
     </footer>
-
-    <script src="section7.js"></script>
 </body>
 </html>
