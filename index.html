@@ -5,127 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-        body {
-            padding: 20px;
-            background-color: #eee;
-        }
-        .card {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-        }
-        input {
-            margin-bottom: 10px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
 </head>
 <body>
+    <header class="d-flex align-items-center rounded">
+        <div>
+            <h4 class="text-white">Mid-Project</h4>
+            <small>Group: <strong>Soyun, Akari, Ariel</strong></small>    
+        </div>
+        <div class="icons ml-auto">
+            <i class="fab fa-html5" title="HTML" ></i>
+            <i class="fab fa-css3-alt" title="CSS" ></i>
+            <i class="fab fa-js-square" title="Javascript" ></i>
+            <i class="fab fa-github" title="Github"></i>
+        </div>
+    </header>
     <div class="card">
+        <div class="card-header">
+            <strong>1st Section:</strong> What is your name? Then, it will show on "Hi, ${yourName}, Welcome to this page"
+        </div>
         <div class="card-body">
-            <h4>1st Section</h4>
-            <p>What is your name? Then, it will show on `Hi, ${yourName}, Welcome to this
-                page`</p>
-            <hr/>
-            <!-- The form goes here -->
-            <p>What is your name?</p>
+            <!-- 1st section form -->
+            <h6>What is your name?</h6>
             <input type="text" id="name" placeholder="Please enter your name">
             <button class="btn btn-primary" onclick="showName()">Click</button>
-            <h4 id="outputS1"></h4>
+            <h6 class="result" id="outputS1"></h6>
             <script src="section1.js"></script>
+            <!-- End of 1st form -->
         </div>
     </div>
     <div class="card">
+        <div class="card-header">
+            <strong>2nd Section:</strong> Creating a calculator based on two inputs that can do multiplication, division, addition, and subtraction.
+        </div>
         <div class="card-body">
-            <h4>2nd Section</h4>
-            <p>Creating a calculator based on two inputs that can do multiplication, division,
-                addition, and subtraction.</p>
-            <hr/>
-            <!-- The form goes here -->
+            <!-- 2nd section form -->
+            <h6>Inform two numbers to use the calculator:</h6>
             <input type="text" id="num1" value="12">
             <input type="text" id="num2" value="4">
-            <h4 id="outputS2"></h4>
+            <h6 class="result" id="outputS2"></h6>
             <button class="btn btn-primary" onclick="multiply()">Multiply</button>
             <button class="btn btn-primary" onclick="divide()">Divide</button>
             <button class="btn btn-primary" onclick="add()">Add</button>
             <button class="btn btn-primary" onclick="subtract()">Subtract</button>
             <script src="section2.js"></script>
+            <!-- End of 2nd form -->
         </div>
     </div>
     <div class="card">
+        <div class="card-header">
+            <strong>3rd Section:</strong> How old are you? ...
+        </div>
         <div class="card-body">
-            <h4>3rd Section</h4>
-            <p>How old are you?</p>
-            <hr/>
-            <!-- The form goes here -->
-            <p>How old are you?</p>
+            <!-- 3rd section form -->
+            <h6>How old are you?</h6>
             <input type="text" id="age" placeholder="Please enter your age">
             <button class="btn btn-primary" onclick="showAge()">Click</button>
-            <h4 id="outputS3"></h4>
+            <h6 class="result" id="outputS3"></h6>
             <script src="section3.js"></script>
+            <!-- End of 3rd form -->
         </div>
     </div>
     <div class="card">
+        <div class="card-header">
+            <strong>4th Section:</strong> Ask two numbers using input tags and show the sum from number A through number B including these two numbers (ex, 4 and 6 will show 15)
+        </div>
         <div class="card-body">
-            <h4>4th Section</h4>
-            <p>Ask two numbers using input tags and show the sum from numberA through numberB including these two numbers (ex, 4 and 6 will show 15)</p>
-            <hr/>
+            <!-- 4th section form -->
+            <h6>Inform two numbers to calculate the sum between the numbers:</h6>
             <input type="text" id="4th_num1" placeholder="first number">
             <input type="text" id="4th_num2" placeholder="second number">
-            <h1 id="output"></h1>
+            <h6 class="result" id="output"></h6>
             <button class="btn btn-primary" onclick="sum()">Sum</button>
             <script src="sum.js"></script>
-         
+            <!-- End of 4th form -->
         </div>
     </div>
-
     <div class="card">
+        <div class="card-header">
+            <strong>5th Section:</strong> Ask a number and shows the number is a prime number or not (the smallest prime number is 2)
+        </div>
         <div class="card-body">
-            <h4>5th Section</h4>
-            <p>Ask a number and shows the number is a prime number or not (the smallest prime number is 2)</p>
-            <hr/>
+            <!-- 5th section form -->
+            <h6>Inform one number to check if it is a prime number:</h6>
             <input type="text" id="5th_num" >
-            <h1 id="output2"></h1>
+            <h6 class="result" id="output2"></h6>
             <button class="btn btn-primary" onclick="check()">Check</button>
             <script src="sum.js"></script>
- 
+            <!-- End of 5th form -->
         </div>
     </div>
-
     <div class="card">
+        <div class="card-header">
+            <strong>6th Section:</strong> Ask a number 'n' to show all the Fibonacci numbers up to 7th Fibonacci number. For example, if the number is 7, it will show 1, 1, 2, 3, 5, 8, 13
+        </div>
         <div class="card-body">
-            <h4>6th Section</h4>
-            <p>Ask a number ‘n’ to show all the Fibonacci numbers up to 7th Fibonacci number. For example, if the number is 7, it will show 1, 1, 2, 3, 5, 8, 13</p>
-            <hr/>
-            <!-- The form goes here -->
+            <!-- 6th section form -->
+            <h6>Inform one number to calculate its Fibonacci:</h6>
             <script src="section6.js"></script>
             <input class="form-control" id="fibonacci" type="number"  />
             <button class="btn btn-primary" onclick="CalculateFibonaccie()" >Calculate</button>
-            <!-- The result goes here -->
-            <p class="font-weight-bold" id="section6-result"></p>
+            <h6 class="result" id="section6-result"></h6>
+            <!-- End of 6th form -->
         </div>
     </div>
-
     <div class="card">
+        <div class="card-header">
+            <strong>7th Section:</strong> Ask a birth year and calculate how many days you lived till today. Show the days you lived in a DOM element. (Please ignore the leap year)
+        </div>
         <div class="card-body">
-            <h4>7th Section</h4>
-            <p>Ask a birth year and calculate how many days you lived till today. Show the days you lived in a DOM element. (Please ignore the leap year)</p>
-            <hr/>
-            <!-- The form goes here -->
+            <!-- 7th section form -->
+            <h6>What is your birthdate?</h6>
             <script src="section7.js"></script>
             <input class="form-control" id="birthdate" type="date"  />
             <button class="btn btn-primary" onclick="CalculateDate()" >Calculate</button>
-            <!-- The result goes here -->
-            <p class="font-weight-bold" id="section7-result"></p>
+            <h6 class="result" id="section7-result"></p>
+            <!-- End of 7th form -->
         </div>
     </div>
-
     <footer>
-        <hr/>
-        <small>Introduction to Computing May 11, 2020</small>
+        Introduction to Computing May 20, 2020
     </footer>
 </body>
 </html>
