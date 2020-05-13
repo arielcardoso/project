@@ -1,0 +1,56 @@
+body {
+    background-color: #f8f9fa !important;
+    background-color: #eee;
+}
+header {
+    max-width: 720px;
+    margin: 20px auto;
+    color: rgba(255,255,255, 0.75);
+    padding: 20px;
+    background-color: #6f42c1;
+}
+header i {
+    margin: 0 5px;
+    font-size: 1.5em;
+    color: rgba(255,255,255, 0.5);
+    transition: all .2s ease-in-out;
+}
+header .icons i:hover {
+    color: rgba(255,255,255, 1);
+    transform: scale(1.2);
+}
+header strong {
+    color: rgba(255,255,255, 1);
+}
+.card {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+    border-radius: .25rem!important;
+    border: 0;
+}
+.card-header {
+    background-color: rgba(0,0,0, 0.1);
+    color: rgba(0,0,0, 0.5);
+    font-size: 0.9em;
+    border: 1px solid rgba(0,0,0, 0.05);
+    text-align: center;
+}
+.card-body {
+    text-align: center;
+}
+.result {
+    color: #6f42c1;
+    margin: 10px 0;
+}
+footer {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    padding: 20px 0;
+}
+input {
+    margin-bottom: 10px;
+    text-align: center;
+}
