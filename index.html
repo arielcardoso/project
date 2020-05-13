@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
+    <link rel="icon" type="image/png" href="favicon.png" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" >
@@ -28,8 +29,12 @@
         <div class="card-body">
             <!-- 1st section form -->
             <h6>What is your name?</h6>
-            <input type="text" id="name" placeholder="Please enter your name">
-            <button class="btn btn-primary" onclick="showName()">Click</button>
+            <div class="input-group">
+                <input class="form-control" type="text" id="name" placeholder="Please enter your name">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="showName()">Click</button>
+                </div>
+            </div>
             <h6 class="result" id="outputS1"></h6>
             <script src="section1.js"></script>
             <!-- End of 1st form -->
@@ -42,8 +47,10 @@
         <div class="card-body">
             <!-- 2nd section form -->
             <h6>Inform two numbers to use the calculator:</h6>
-            <input type="text" id="num1" value="12">
-            <input type="text" id="num2" value="4">
+            <div class="d-flex">
+                <input class="form-control mr-1" type="text" id="num1" value="12">
+                <input class="form-control" type="text" id="num2" value="4">
+            </div>
             <h6 class="result" id="outputS2"></h6>
             <button class="btn btn-primary" onclick="multiply()">Multiply</button>
             <button class="btn btn-primary" onclick="divide()">Divide</button>
@@ -60,8 +67,12 @@
         <div class="card-body">
             <!-- 3rd section form -->
             <h6>How old are you?</h6>
-            <input type="text" id="age" placeholder="Please enter your age">
-            <button class="btn btn-primary" onclick="showAge()">Click</button>
+            <div class="input-group">
+                <input class="form-control" type="text" id="age" placeholder="Please enter your age">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="showAge()">Click</button>
+                </div>
+            </div>
             <h6 class="result" id="outputS3"></h6>
             <script src="section3.js"></script>
             <!-- End of 3rd form -->
@@ -74,10 +85,12 @@
         <div class="card-body">
             <!-- 4th section form -->
             <h6>Inform two numbers to calculate the sum between the numbers:</h6>
-            <input type="text" id="4th_num1" placeholder="first number">
-            <input type="text" id="4th_num2" placeholder="second number">
+            <div class="d-flex">
+                <input class="form-control mr-1" type="text" id="4th_num1" placeholder="first number">
+                <input class="form-control mr-1" type="text" id="4th_num2" placeholder="second number">
+                <button class="btn btn-primary" onclick="sum()">Sum</button>
+            </div>
             <h6 class="result" id="output"></h6>
-            <button class="btn btn-primary" onclick="sum()">Sum</button>
             <script src="sum.js"></script>
             <!-- End of 4th form -->
         </div>
@@ -89,9 +102,13 @@
         <div class="card-body">
             <!-- 5th section form -->
             <h6>Inform one number to check if it is a prime number:</h6>
-            <input type="text" id="5th_num" >
+            <div class="input-group">
+                <input class="form-control" type="text" id="5th_num" >
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="check()">Check</button>
+                </div>
+            </div>
             <h6 class="result" id="output2"></h6>
-            <button class="btn btn-primary" onclick="check()">Check</button>
             <script src="sum.js"></script>
             <!-- End of 5th form -->
         </div>
@@ -103,10 +120,14 @@
         <div class="card-body">
             <!-- 6th section form -->
             <h6>Inform one number to calculate its Fibonacci:</h6>
-            <script src="section6.js"></script>
-            <input class="form-control" id="fibonacci" type="number"  />
-            <button class="btn btn-primary" onclick="CalculateFibonaccie()" >Calculate</button>
+            <div class="input-group">
+                <input class="form-control" id="fibonacci" type="number"  />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="CalculateFibonaccie()" >Calculate</button>
+                </div>
+            </div>
             <h6 class="result" id="section6-result"></h6>
+            <script src="section6.js"></script>
             <!-- End of 6th form -->
         </div>
     </div>
@@ -117,10 +138,14 @@
         <div class="card-body">
             <!-- 7th section form -->
             <h6>What is your birthdate?</h6>
-            <script src="section7.js"></script>
-            <input class="form-control" id="birthdate" type="date"  />
-            <button class="btn btn-primary" onclick="CalculateDate()" >Calculate</button>
+            <div class="input-group">
+                <input class="form-control" id="birthdate" type="date"  />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="CalculateDate()" >Calculate</button>
+                </div>
+            </div>
             <h6 class="result" id="section7-result"></p>
+            <script src="section7.js"></script>
             <!-- End of 7th form -->
         </div>
     </div>
